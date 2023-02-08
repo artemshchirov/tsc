@@ -1,0 +1,49 @@
+{
+  "name": "typescript-node-starter",
+  "version": "1.0.0",
+  "description": "Typescript",
+  "scripts": {
+    "start": "ts-node-dev --poll --respawn src/index.ts",
+    "dev": "nodemon -w *.ts -e ts -x ts-node --files -H -T ./src/index.ts",
+    "dev:0": "nodemon -w *.ts -e ts -x ts-node --files -H -T ./src/0_playground/index.ts",
+    "dev:1": "nodemon -w *.ts -e ts -x ts-node --files -H -T ./src/1_type-system/index.ts",
+    "dev:2": "nodemon -w *.ts -e ts -x ts-node --files -H -T ./src/2_/index.ts",
+    "build": "tsc",
+    "eslint-check": "npx eslint src/index.ts",
+    "eslint-fix": "npx eslint src/index.ts --fix",
+    "prettier-start": "npx prettier --single-quote --tab-width 2 src/index.ts",
+    "prettier-clean": "npx prettier src/index.ts",
+    "prettier-write": "prettierrc --write src/index.ts"
+  },
+  "keywords": [
+    "typescript",
+    "tsc",
+    "javascript",
+    "NodeJS",
+    "starter",
+    "kit"
+  ],
+  "author": "Artem Shchirov",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^13.7.1",
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "nodemon": "^2.0.2",
+    "prettier": "1.19.1",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pixelpromotions/typescript-starter-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pixelpromotions/typescript-starter-kit/issues"
+  },
+  "homepage": "https://github.com/Pixelpromotions/typescript-starter-kit#readme"
+}
